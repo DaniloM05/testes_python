@@ -18,7 +18,7 @@ def test_validacao_cidade_formato_invalido():
 def test_validacao_cidade_vazia():
     """Teste para um nome de cidade vazio."""
     with pytest.raises(ValueError, match="Formato da cidade inválido"):
-        valida_CEP("0673000000000", "")
+        valida_CEP("06730000", "")
 
 def test_validacao_cep_nao_pertence_a_cidade():
     """Teste para um CEP que não pertence à cidade informada."""
